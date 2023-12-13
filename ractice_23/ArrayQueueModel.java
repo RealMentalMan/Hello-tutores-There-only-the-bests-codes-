@@ -1,7 +1,6 @@
 package ractice_23;
 
 import java.util.Queue;
-import java.util.LinkedList;
 class ArrayQueueModel {
     private int a = 1;
     private int b = 2;

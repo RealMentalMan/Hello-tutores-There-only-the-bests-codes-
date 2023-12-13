@@ -4,24 +4,21 @@ import java.util.LinkedList;
 
 public class Queue {
     public static void main(String[] args) {
-        // create an object of Queue class
+        // Размер очереди: 5
         ArrayQueue q = new ArrayQueue();
-        // try to delete element from the queue
-        // currently queue is empty
-        // so deletion is not possible
+
         q.deQueue();
-        // insert elements to the queue
+
         for(int i = 1; i < 6; i ++) {
             q.enQueue(i);
         }
-        // 6th element can't be added to queue because queue is   full
         q.enQueue(6);
         q.display();
-        // deQueue removes element entered first i.e. 1
+
         q.deQueue();
-        // Now we have just 4 elements
+
         q.display();
-        System.out.println(q.Element());
+        System.out.println(q.element());
         q.clear();
         q.display();
         ArrayQueueADT adt = new ArrayQueueADT();
